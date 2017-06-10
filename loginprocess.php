@@ -1,5 +1,5 @@
 <?php 
-	if (isset($_POST['email']) && isset($_POST['password'])){
+	if (isset($_POST['username']) && isset($_POST['password'])){
 		userlogin();
 	}
 	else {
@@ -8,11 +8,10 @@
 
 	function userlogin(){
 		require('dbconnect.php');
-		$email = test_input($_POST['email']);
+		$email = test_input($_POST['username']);
 		$password = test_input($_POST['password']);
-		$sql = "SELECT * FROM user WHERE email = '$email' and password = '$password'";
-		$result = $conn->query($sql);
-		if ($result->num_rows > 0){
+		
+		if ($email=="nagno@321" and $password=="12345"){
 			echo "1";
 			//header("location:dashboard.php");
 		}

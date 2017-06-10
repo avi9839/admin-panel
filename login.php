@@ -28,7 +28,7 @@
                       <div class="q-back">
                         <div class="form-group">
                           <div class="col-md-12">
-                            <input class="form-control" placeholder="Email-Id" name="email" type="email" maxlength="30" autocomplete required autofocus>
+                            <input class="form-control dairy dropdown-toggle" name="username" type="text" placeholder="User name"autocomplete required autofocus>
                           </div>
                         </div>
                         <div class="form-group">
