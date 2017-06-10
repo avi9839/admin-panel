@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <?php include 'navbar.php' ?>
+    <?php include 'includes/navbar.php' ?>
 
     <div class="container">
       <div class="row">
@@ -35,7 +35,7 @@
                         <th>Contact</th>
                         <th>Time Period</th>
                         <th>Status</th>
-
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody id="userlist">
@@ -56,6 +56,7 @@
                                     <td>".$user['mobile']."</td>
                                     <td>".$user['duration']."</td>
                                     <td>".$user['status']."</td>
+                                    <td><button class='mdl-btn' type='submit'>Edit</button><td>
                                   </tr>";
                         }
                       }

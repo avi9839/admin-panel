@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <?php include 'navbar.php' ?>
+    <?php include 'includes/navbar.php' ?>
 
     <div class="container">
       <div class="row">
@@ -77,8 +77,10 @@
       </div>
       </div>
       <div class="row">
-            <div id="register-user-msg-div"></div>
-      </div>
+            <div class="col-md-5" style="margin: 0 auto; float: none;">
+                <div id="register-user-msg-div" class="alert alert-success" style="display: none;"></div>
+            </div>
+      </div> 
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

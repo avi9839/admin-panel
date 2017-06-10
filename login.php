@@ -10,7 +10,7 @@
     
   </head>
   <body>
-    <?php include 'navbar.php' ?>
+    <?php include 'includes/navbar.php' ?>
     <div class="container">
       <div class="row">
         
@@ -28,7 +28,7 @@
                       <div class="q-back">
                         <div class="form-group">
                           <div class="col-md-12">
-                            <input type="text" class="form-control" id="" placeholder="User ID" name="user" required>
+                            <input class="form-control" placeholder="Email-Id" name="email" type="email" maxlength="30" autocomplete required autofocus>
                           </div>
                         </div>
                         <div class="form-group">
@@ -54,8 +54,10 @@
 
       </div>
       <div class="row">
-            <div id="login-user-msg-div"></div>
-      </div>  
+            <div class="col-md-5" style="margin: 0 auto; float: none;">
+                <div id="login-user-msg-div" class="alert alert-success" style="display: none;"></div>
+            </div>
+      </div>   
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
